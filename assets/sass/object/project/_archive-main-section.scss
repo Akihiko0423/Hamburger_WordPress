@@ -128,7 +128,17 @@
             color:#3C2A10;
         }
         @include smafo{
-            display:none;
+            display:flex;
+            justify-content: space-between;
+            span{
+                display:none;
+            }
+            a{
+                border:none;
+            }
+            .page{
+                display:none;
+            }
         }
     }
 }
