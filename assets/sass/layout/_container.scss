@@ -1,0 +1,8 @@
+.l-container{
+    display:grid;
+    grid-template-rows:$header 1fr $footer;
+    grid-template-columns: 1fr 19%;
+    @include tab{
+        display:block;
+    }
+}

@@ -1,0 +1,75 @@
+.p-menu{
+    width:80%;
+    height:1300px;
+    padding-top:82px;
+    margin:0 auto;
+    color:#707070;
+    &__title{
+        padding-bottom:68px;
+        font-size:2.0vw;
+        //タブレット以下の幅は消す
+        @include tab{
+            display:none;
+        }
+    }
+    .menu-category-menu-container{
+        .menu{
+            &-item{
+                a{
+                    padding:17px 0 40px;
+                    font-size:1.4vw;
+                    color:#707070;
+                    font-weight:bold;
+                    display:block;
+                    &:hover{
+                        cursor:pointer;
+                        color:white;
+                    }
+                    @include tab{
+                        font-size:24px;               
+                    }
+                }
+                .sub-menu{
+                    li{
+                        a{
+                            padding:0 0 23px 20px;
+                            font-size:1.0vw;
+                            font-weight:normal;
+                            @include tab{
+                                font-size:20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include tab{
+        .p-close-btn{
+            position:absolute;
+            top:0.7%;
+            right:5%;
+            .batsu {
+                display: block;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                &::before,&::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 5px; /* 棒の幅（太さ） */
+                    height: 30px; /* 棒の高さ */
+                    background: #707070;
+                }
+                &::before{
+                    transform: translate(-50%,-50%) rotate(45deg); 
+                }
+                &::after{
+                    transform: translate(-50%,-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}

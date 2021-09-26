@@ -1,0 +1,21 @@
+.p-main-visual{
+    background-image:url(../img/main-visual.png);
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+    height:530px;
+    position:relative;
+    @include tab{
+        height:285px;
+    }
+    &__title{
+        position:absolute;
+        top:43%;
+        left:86px;
+        color:white;
+        font-size:40px;
+        @include smafo{
+            left:25px;
+        }
+    }
+}

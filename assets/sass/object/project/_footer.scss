@@ -1,0 +1,17 @@
+.p-footer{
+    text-align:center;
+    color:white;
+    height:150px;
+    &-shop-info{
+        padding-top:40px;
+        font-size:20px;
+        &:hover{
+            opacity:0.7;
+            cursor:pointer;
+        }
+    }
+    &-text{
+        padding-top:30px;
+        font-size:14px;
+    }
+}
