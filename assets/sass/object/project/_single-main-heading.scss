@@ -1,6 +1,7 @@
 .p-single-main-heading{
     @include single-main-width;
     color:$single-text-color;
+    object-fit: cover;
     h2{
         font-size:36px;
         margin:60px 0 60px;
@@ -43,4 +44,9 @@
         }
     }
 
+    .wp-block-image{
+        img{
+            object-fit: cover;
+        }
+    }
 }

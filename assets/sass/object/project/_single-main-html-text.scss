@@ -1,7 +1,5 @@
-.p-single-main-html-text{
-    @include single-main-width;
+.wp-block-code{
     background-color:#F5F5F5;
-    color:$single-text-color;
     margin-bottom:50px;
     @include tab{
         margin-bottom:60px;
@@ -9,8 +7,9 @@
     @include smafo{
         margin-bottom:30px;
     }
-    .c-html-text{
+    code{
         padding:50px 0 50px 84px;
+        font-size:16px;
         @include tab{
             padding-left:50px;
         }
