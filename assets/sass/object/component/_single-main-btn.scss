@@ -1,5 +1,4 @@
 .c-single-main-btn{
-    margin-bottom:60px;
     margin-left:5%;
     width:429px;
     height:104px;
@@ -26,4 +25,12 @@
             line-height:81px;
         }
     }
+}
+
+.wp-block-button__link{
+    padding:0;
+    background-color:initial;
+}
+.wp-block-buttons>.wp-block-button{
+    margin-bottom:60px;
 }
