@@ -6,21 +6,28 @@
         position:absolute;
         top:0%;
         left:100%;
-        width:50%;
-        height:2747px;
+        width:55%;
+        height:100vh;
         z-index:100;
         transition: left 0.3s;
     }
     @include smafo{
-        height:2566px;
-        width:80%;
+        width:85%;
     }
 }
+
+/* サイドバーのjs制御 */
 .open{
     display: block !important;
 }
 
+.open-toggle{
+    overflow: hidden;
+}
+
+
 .open-slide{
+    overflow-y: scroll;
     left:50%;
     @include smafo{
         left:20%;

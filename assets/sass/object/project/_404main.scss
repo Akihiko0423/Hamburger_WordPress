@@ -1,0 +1,14 @@
+.p-404main{
+    width:90%;
+    margin:50px auto 50px;
+    color:$single-text-color;
+    &__text{
+        margin-bottom:10px;
+    }
+    &__link{
+        a{
+            text-decoration:underline;
+            color:$single-text-color;
+        }
+    }
+}

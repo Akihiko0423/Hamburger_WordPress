@@ -42,14 +42,13 @@
 @import "object/project/_footer";
 @import "object/project/_archive-main-visual";
 @import "object/project/_archive-main-section";
-@import "object/project/_single-main-visual";
-@import "object/project/_single-main-heading";
-@import "object/project/_single-main-many-photo";
-@import "object/project/_single-main-list";
-@import "object/project/_single-main-html-text";
-@import "object/project/_single-main-table";
-@import "object/project/_single";
+@import "object/project/_page-main-heading";
+@import "object/project/_page-main-many-photo";
+@import "object/project/_page-main-list";
+@import "object/project/_page-main-table";
 @import "object/project/_page-main-visual";
+@import "object/project/_single";
+@import "object/project/_404main";
 
 
 // -----------------------------------------------------------------
@@ -63,4 +62,9 @@
 @import "object/utility/_size";
 @import "object/utility/_text";
 
+
+// ==========================================================================
+// WordPress
+// ==========================================================================
+@import "WordPress/_wordpress";
 

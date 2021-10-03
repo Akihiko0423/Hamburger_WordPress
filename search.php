@@ -34,7 +34,7 @@
               </article>
             <?php endwhile; ?>
             <?php else: ?>
-              <p>検索結果はありませんでした。</p>
+              <p class = "c-noarchive">検索結果はありませんでした。</p>
           <?php endif; ?>
         </div>
         <!--ページネーションを表示-->
