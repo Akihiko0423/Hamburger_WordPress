@@ -191,6 +191,12 @@ select {
 
 .c-search-form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-search-form__keyword {
@@ -214,7 +220,7 @@ select {
 
 .c-search-form__btn {
   width: 20%;
-  padding: 14px 0  6px;
+  padding: 10px 0;
   border-radius: 2px;
   background: #F2EDE9;
   color: #707070;
@@ -248,7 +254,7 @@ select {
 @media (max-width: 1024px) {
   .c-tablet-background--gray {
     width: 100%;
-    height: 2747px;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -256,12 +262,6 @@ select {
     z-index: 99;
     display: none;
     opacity: 0.7;
-  }
-}
-
-@media (max-width: 1024px) and (max-width: 599px) {
-  .c-tablet-background--gray {
-    height: 2566px;
   }
 }
 
@@ -552,6 +552,7 @@ select {
   width: 50%;
   height: 100%;
   background-image: url(../img/eatin.png);
+  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -744,7 +745,6 @@ select {
 
 .p-menu {
   width: 80%;
-  height: 1300px;
   padding-top: 82px;
   margin: 0 auto;
   color: #707070;
@@ -759,6 +759,10 @@ select {
   .p-menu__title {
     display: none;
   }
+}
+
+.p-menu .menu-category-menu-container .menu {
+  height: 100vh;
 }
 
 .p-menu .menu-category-menu-container .menu-item a {
@@ -781,7 +785,7 @@ select {
 }
 
 .p-menu .menu-category-menu-container .menu-item .sub-menu li a {
-  padding: 0 0 23px 20px;
+  padding: 0 0 15px 20px;
   font-size: 1.0vw;
   font-weight: normal;
 }
@@ -795,8 +799,8 @@ select {
 @media (max-width: 1024px) {
   .p-menu .p-close-btn {
     position: absolute;
-    top: 4%;
-    right: 10%;
+    top: 2%;
+    right: 15%;
   }
   .p-menu .p-close-btn .batsu {
     display: block;

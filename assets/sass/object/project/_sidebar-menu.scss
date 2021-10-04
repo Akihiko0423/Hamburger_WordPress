@@ -1,6 +1,6 @@
 .p-menu{
     width:80%;
-    height:1300px;
+
     padding-top:82px;
     margin:0 auto;
     color:#707070;
@@ -14,6 +14,7 @@
     }
     .menu-category-menu-container{
         .menu{
+            height:100vh;
             &-item{
                 a{
                     padding:17px 0 40px;
@@ -32,7 +33,7 @@
                 .sub-menu{
                     li{
                         a{
-                            padding:0 0 23px 20px;
+                            padding:0 0 15px 20px;
                             font-size:1.0vw;
                             font-weight:normal;
                             @include tab{
@@ -47,8 +48,8 @@
     @include tab{
         .p-close-btn{
             position:absolute;
-            top:4%;
-            right:10%;
+            top:2%;
+            right:15%;
             .batsu {
                 display: block;
                 position: relative;

@@ -3,7 +3,7 @@
         <h2 class = "p-menu__title">Menu</h2>
         <!--タブレット時のメニューバーの×ボタン-->
         <div class = "p-close-btn"><span class="batsu"></span></div>
-        <?php wp_nav_menu( array('menu' => 'category-menu')); ?>
+        <?php wp_nav_menu( array('menu' => 'category-menu','theme_location' => 'category-menu')); ?>
     </div>
 </div>
 
@@ -14,6 +14,11 @@
         /* スタイルシートの記述 */
         .l-sidebar {
             margin-top:32px;
+        }
+    }
+    @media (max-width: 782px){
+        .l-sidebar{
+            margin-top:46px;
         }
     }
     </style>

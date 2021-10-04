@@ -32,17 +32,19 @@
                   <a href="<?php the_permalink(); ?>">詳しく見る</a>
                 </div>
               </article>
+              <?php wp_link_pages(); ?>
             <?php endwhile; ?>
+            <!--ページネーションを表示-->
+            <?php 
+              if(function_exists('wp_pagenavi')){
+                wp_pagenavi();
+              }
+            ?>
             <?php else: ?>
               <p class = "c-noarchive">検索結果はありませんでした。</p>
           <?php endif; ?>
         </div>
-        <!--ページネーションを表示-->
-        <?php 
-          if(function_exists('wp_pagenavi')){
-            wp_pagenavi();
-          }
-        ?>
+
       </div>
   </main>
 

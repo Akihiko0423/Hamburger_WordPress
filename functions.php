@@ -3,7 +3,7 @@
 //テーマサポート
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 add_theme_support('post-thumbnails');           //アイキャッチ画像
-add_theme_support('menus');                     //メニュー
+register_nav_menus() ;                          //テーマチェックでadd_theme_support('menus')だとエラー起きたので置き換え
 add_theme_support('title-tag');                 //タイトルタグを出力
 add_theme_support( 'automatic-feed-links' );    //この機能は、headerでの、投稿とコメントのRSSフィードのリンクを有効にします
 

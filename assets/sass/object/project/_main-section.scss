@@ -78,6 +78,7 @@
         width:50%;
         height:100%;
         background-image:url(../img/eatin.png);
+        background-size:cover;
         object-fit: cover;
         @include smafo{
             width:90%;
