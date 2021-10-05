@@ -67,26 +67,16 @@
                         font-size:5vw;
                     }
                 }
-                h3{
-                    padding-bottom:5px;
-                    padding-left:63px;
-                    @include tab{
-                        padding-left:35px;
-                    }
-                }
                 p{
                     width:84%;
-                    padding-bottom:10%;
                     padding-left:63px;
                     font-size:16px;
                     @include tab{
                         padding-left:35px;
-                        padding-bottom:35px;
                         font-size:1.8vw;
                     }
                     @include smafo{
                         font-size:14px;
-                        padding-bottom:10%;
                     }
                 }
                 .detail-btn{
@@ -124,29 +114,5 @@
         .c-noarchive{
             margin:50px 0;
         }
-    }
-}
-
-.p-section-page{
-    width:600px;
-    padding:50px 0 30px;
-    margin:0 auto;
-    @include tab{
-        width:550px;
-    }
-    @include smafo{
-        display:none;
-    }
-}
-.p-page-select-btn{
-    display:none;
-    @include smafo{
-        display:flex;
-        justify-content: space-between;
-        padding-bottom:31px;
-    }
-    a{
-        text-decoration: black;
-        color:#707070;
     }
 }
