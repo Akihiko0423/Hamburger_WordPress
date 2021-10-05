@@ -39,6 +39,9 @@
               if(function_exists('wp_pagenavi')){
                 wp_pagenavi();
               }
+              if(!function_exists('wp_pagenavi')){
+                echo "WP-PageNaviを利用しています。プラグインのWP-PageNaviを有効化してください";
+              }
             ?>
             <?php else: ?>
               <p class = "c-noarchive">検索結果はありませんでした。</p>
