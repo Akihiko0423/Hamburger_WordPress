@@ -2,6 +2,7 @@
     display:grid;
     grid-template-rows:$header 1fr $footer;
     grid-template-columns: 1fr 19%;
+    overflow-x: hidden;
     @include tab{
         display:block;
     }

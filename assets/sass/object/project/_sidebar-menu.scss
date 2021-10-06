@@ -1,6 +1,5 @@
 .p-menu{
     width:80%;
-
     padding-top:82px;
     margin:0 auto;
     color:#707070;
@@ -11,6 +10,9 @@
         @include tab{
             display:none;
         }
+    }
+    @include tab{
+        display:none;
     }
     .menu-category-menu-container{
         .menu{
