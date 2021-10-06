@@ -15,6 +15,11 @@
         display:none;
     }
     .menu-category-menu-container{
+        @include tab{
+            .menu-item-72{
+                padding-bottom:20px;
+            }
+        }
         .menu{
             height:100vh;
             &-item{

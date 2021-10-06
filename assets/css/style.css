@@ -216,7 +216,7 @@ select {
 
 .c-search-form__btn {
   width: 20%;
-  padding: 10px 0;
+  padding: 10px 0 !important;
   border-radius: 2px;
   background: #F2EDE9;
   color: #707070;
@@ -250,7 +250,7 @@ select {
 @media (max-width: 1024px) {
   .c-tablet-background--gray {
     width: 100%;
-    height: 100%;
+    height: 130vh;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -760,6 +760,12 @@ select {
 @media (max-width: 1024px) {
   .p-menu {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .p-menu .menu-category-menu-container .menu-item-72 {
+    padding-bottom: 20px;
   }
 }
 
