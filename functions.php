@@ -28,7 +28,7 @@ function my_document_title_parts($title){
     if(is_home()){
         unset($title['tagline']);
         //テキストを変更
-        $title['title'] = 'ハンバーガーサイト | 最終課題';
+        $title['title'] = 'hamburger-site';
     }
     return $title;
 }
